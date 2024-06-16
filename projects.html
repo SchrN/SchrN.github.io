@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico Schreiner - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #2f92d4;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .header .contact-icons a {
+            margin-left: 10px;
+        }
+        .header .contact-icons img {
+            width: 24px;
+            height: 24px;
+        }
+        .welcome-section {
+            text-align: center;
+            background-image: url('code.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+        }
+        .welcome-section h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        .content-section {
+            background-color: #4da6ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content-section p {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .content-section p strong {
+            font-weight: bold;
+        }
+        .projects-section {
+            background-color: #b3d1ff;
+            padding: 40px 20px;
+        }
+        .projects-section h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+        .project-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: calc(50% - 40px);
+            display: inline-block;
+            vertical-align: top;
+        }
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+        .project-card h3 {
+            margin: 10px 0;
+            font-size: 22px;
+        }
+        .project-card p {
+            font-size: 16px;
+        }
+        .project-card .project-title {
+            color: #2f92d4;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Nico Schreiner<br>Software Engineer</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+        <div class="contact-icons">
+            <a href="mailto:schreiner_nico@web.com">
+                <img src="email.png" alt="Email">
+            </a>
+            <a href="https://github.com/SchrN?tab=repositories" target="_blank">
+                <img src="github.png" alt="GitHub">
+            </a>
+        </div>
+    </header>
+    <section class="welcome-section">
+        <h1>Willkommen auf meinem Portfolio!</h1>
+        <img src="profile-pic.jpg" alt="Nico Schreiner" class="profile-pic" width="150" height="150">
+    </section>
+    <section class="content-section">
+        <p>Mein Name ist <strong>Nico Schreiner</strong>, ich bin Software Engineer.</p>
+    </section>
+    <section class="projects-section">
+        <h2>Verteilte Anwendungen & Systeme</h2>
+        <div class="project-card">
+            <img src="project1.jpg" alt="Project 1">
+            <h3 class="project-title">Bachelorarbeit: Policy-driven Security</h3>
+            <p>Entwicklung und prototypische Implementierung einer dynamischen, richtliniengesteuerten Infrastruktur zur Erkennung von potentiellen Angriffen auf ein Smart Building. In Java, mit MySQL-Datenbank. Prototypische Anwendung und Testing mit openHAB.</p>
+        </div>
+        <div class="project-card">
+            <img src="project2.jpg" alt="Project 2">
+            <h3 class="project-title">Multicopter-Drohne</h3>
+            <p>Forschungsprojekt für besonders engagierte und qualifizierte Bachelor-Studierende der Hochschule Kaiserslautern: Bau einer Multicopter-Drohne und Entwicklung einer Fernsteuerungssoftware für Android / iOS / Linux.</p>
+        </div>
+    </section>
+</body>
+</html>
 
