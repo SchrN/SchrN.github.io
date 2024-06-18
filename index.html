@@ -27,9 +27,13 @@
             color: white;
             margin: 0 10px;
             text-decoration: none;
+            display: flex;
+            align-items: center;
         }
-        .header .contact-icons a {
-            margin-left: 10px;
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 5px;
         }
         .header .contact-icons img {
             width: 24px;
@@ -70,11 +74,11 @@
     <header class="header">
         <div class="logo">Nico Schreiner<br>Software Engineer</div>
         <nav>
-            <a href="index.html">Home</a>
-                <img src="home.png" alt="Home">
+            <a href="index.html">Home
+                <img src="home.png" alt="Home" class="nav-icon">
             </a>
             <a href="projects.html">Projects
-                <img src="projects.png" alt="Projects">
+                <img src="projects.png" alt="Projects" class="nav-icon">
             </a>
         </nav>
         <div class="contact-icons">
@@ -97,4 +101,5 @@
     </section>
 </body>
 </html>
+
 
