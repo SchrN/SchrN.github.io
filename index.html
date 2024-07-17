@@ -68,6 +68,8 @@
             align-items: center;
             justify-content: space-between;
             margin-bottom: 40px;
+            text-decoration: none;
+            color: inherit;
         }
         .project:nth-child(even) .project-description {
             order: 1;
@@ -85,6 +87,15 @@
         .project-image img {
             max-width: 100%;
             border-radius: 10px;
+        }
+        .project:hover {
+            background-color: #f0f0f0;
+        }
+        .divider {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -110,25 +121,50 @@
         </section>
         <section class="projects-section">
             <h2>Projects</h2>
-            <div class="project">
+            <a class="project" href="https://github.com/SchrN/--seizure-type-classification-tuh-v2.0.0" target="_blank">
                 <div class="project-description">
                     <h3>Project 1: Seizure Type Classification</h3>
                     <p>In diesem Projekt habe ich ein Modell zur Klassifizierung von Anfallstypen auf Basis von EEG-Daten entwickelt. Die Daten stammen vom TUH Seizure Corpus. Das Modell verwendet tiefes Lernen, um verschiedene Anfallstypen zu erkennen und zu klassifizieren.</p>
-                    <a href="https://github.com/SchrN/--seizure-type-classification-tuh-v2.0.0">GitHub Repository</a>
                 </div>
                 <div class="project-image">
                     <img src="project1.png" alt="Seizure Type Classification">
                 </div>
-            </div>
-            <div class="project">
+            </a>
+            <hr class="divider">
+            <a class="project" href="https://github.com/SchrN/GGN-for-TUH-Seizure-Corpus-2.0.0" target="_blank">
                 <div class="project-description">
                     <h3>Project 2: GGN for TUH Seizure Corpus</h3>
                     <p>Dieses Projekt beinhaltet die Implementierung eines Graphen-Neuronalen Netzes (GGN) zur Verarbeitung und Analyse von EEG-Daten. Ziel ist es, die Leistungsfähigkeit des GGN zur Erkennung und Vorhersage von Anfällen zu demonstrieren.</p>
-                    <a href="https://github.com/SchrN/GGN-for-TUH-Seizure-Corpus-2.0.0">GitHub Repository</a>
                 </div>
                 <div class="project-image">
                     <img src="project2.png" alt="GGN for TUH Seizure Corpus">
                 </div>
+            </a>
+            <hr class="divider">
+            <a class="project" href="https://github.com/SchrN/SASL-Compiler" target="_blank">
+                <div class="project-description">
+                    <h3>Project 3: SASL-Compiler</h3>
+                    <p>Der SASL-Compiler ist ein Compiler für die funktionale Programmiersprache SASL. Das Projekt umfasst die Implementierung des Compilers sowie die Optimierung und Erweiterung der Sprache.</p>
+                </div>
+                <div class="project-image">
+                    <img src="project3.png" alt="SASL-Compiler">
+                </div>
+            </a>
+            <hr class="divider">
+            <a class="project" href="https://github.com/SchrN/RoboArena" target="_blank">
+                <div class="project-description">
+                    <h3>Project 4: RoboArena</h3>
+                    <p>RoboArena ist ein Simulationsspiel, in dem autonome Roboter gegeneinander antreten. Das Projekt beinhaltet die Entwicklung der Spielumgebung sowie die Implementierung der KI für die Roboter.</p>
+                </div>
+                <div class="project-image">
+                    <img src="project4.png" alt="RoboArena">
+                </div>
+            </a>
+        </section>
+    </div>
+</body>
+</html>
+         </div>
             </div>
             <div class="project">
                 <div class="project-description">
