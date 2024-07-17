@@ -55,19 +55,6 @@
             border-radius: 50%;
             margin-top: 20px;
         }
-        .content-section {
-            background-color: #4da6ff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .content-section p {
-            margin: 0 auto;
-            max-width: 800px;
-        }
-        .content-section p strong {
-            font-weight: bold;
-        }
         .projects-section {
             padding: 20px;
             text-align: left; /* Text linksbündig ausrichten */
@@ -76,16 +63,28 @@
             font-size: 24px;
             margin-bottom: 20px;
         }
-        .projects-section ul {
-            list-style-type: none;
-            padding: 0;
+        .project {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
         }
-        .projects-section li {
-            margin-bottom: 10px;
+        .project:nth-child(even) .project-description {
+            order: 1;
         }
-        .projects-section a {
-            text-decoration: none;
-            color: #2f92d4;
+        .project:nth-child(even) .project-image {
+            order: 0;
+        }
+        .project-description {
+            width: 60%;
+        }
+        .project-image {
+            width: 35%;
+            text-align: right;
+        }
+        .project-image img {
+            max-width: 100%;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -111,20 +110,56 @@
         </section>
         <section class="projects-section">
             <h2>Projects</h2>
-            <!-- https://github.com/SchrN/GGN-for-TUH-Seizure-Corpus-2.0.0 -->
-            <!-- https://github.com/SchrN/SASL-Compiler -->
-            <!-- https://github.com/SchrN/RoboArena -->
-            <!-- https://github.com/SchrN/--seizure-type-classification-tuh-v2.0.0 -->
-            <ul>
-                <li><a href="https://github.com/SchrN/--seizure-type-classification-tuh-v2.0.0">Project 1</a></li>
-                <li><a href="https://github.com/SchrN/GGN-for-TUH-Seizure-Corpus-2.0.0">Project 2</a></li>
-                <li><a href="https://github.com/SchrN/SASL-Compiler">SASL-Compiler</a></li>
-                <li><a href="https://github.com/SchrN/RoboArena">RoboArena</a></li>
-            </ul>
+            <div class="project">
+                <div class="project-description">
+                    <h3>Project 1: Seizure Type Classification</h3>
+                    <p>In diesem Projekt habe ich ein Modell zur Klassifizierung von Anfallstypen auf Basis von EEG-Daten entwickelt. Die Daten stammen vom TUH Seizure Corpus. Das Modell verwendet tiefes Lernen, um verschiedene Anfallstypen zu erkennen und zu klassifizieren.</p>
+                    <a href="https://github.com/SchrN/--seizure-type-classification-tuh-v2.0.0">GitHub Repository</a>
+                </div>
+                <div class="project-image">
+                    <img src="project1.png" alt="Seizure Type Classification">
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-description">
+                    <h3>Project 2: GGN for TUH Seizure Corpus</h3>
+                    <p>Dieses Projekt beinhaltet die Implementierung eines Graphen-Neuronalen Netzes (GGN) zur Verarbeitung und Analyse von EEG-Daten. Ziel ist es, die Leistungsfähigkeit des GGN zur Erkennung und Vorhersage von Anfällen zu demonstrieren.</p>
+                    <a href="https://github.com/SchrN/GGN-for-TUH-Seizure-Corpus-2.0.0">GitHub Repository</a>
+                </div>
+                <div class="project-image">
+                    <img src="project2.png" alt="GGN for TUH Seizure Corpus">
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-description">
+                    <h3>Project 3: SASL-Compiler</h3>
+                    <p>Der SASL-Compiler ist ein Compiler für die funktionale Programmiersprache SASL. Das Projekt umfasst die Implementierung des Compilers sowie die Optimierung und Erweiterung der Sprache.</p>
+                    <a href="https://github.com/SchrN/SASL-Compiler">GitHub Repository</a>
+                </div>
+                <div class="project-image">
+                    <img src="project3.png" alt="SASL-Compiler">
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-description">
+                    <h3>Project 4: RoboArena</h3>
+                    <p>RoboArena ist ein Simulationsspiel, in dem autonome Roboter gegeneinander antreten. Das Projekt beinhaltet die Entwicklung der Spielumgebung sowie die Implementierung der KI für die Roboter.</p>
+                    <a href="https://github.com/SchrN/RoboArena">GitHub Repository</a>
+                </div>
+                <div class="project-image">
+                    <img src="project4.png" alt="RoboArena">
+                </div>
+            </div>
         </section>
     </div>
 </body>
 </html>
+
+
+<!-- https://github.com/SchrN/GGN-for-TUH-Seizure-Corpus-2.0.0 -->
+            <!-- https://github.com/SchrN/SASL-Compiler -->
+            <!-- https://github.com/SchrN/RoboArena -->
+            <!-- https://github.com/SchrN/--seizure-type-classification-tuh-v2.0.0 -->
 
 
 
