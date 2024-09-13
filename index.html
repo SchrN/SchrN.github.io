@@ -3,193 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nico Schreiner - Portfolio</title>
+    <title>Softwareentwickler-Portfolio</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        html, body {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            width: 100%;
-            height: 100%;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f4f4f4;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0;
-            background-color: white;
-        }
-        .header {
-            background-color: #E6FBFE;
-            color: black;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .header .logo {
-            font-size: 18px; /* Verkleinerte Schriftgröße */
-            font-weight: bold;
-        }
-        .header .contact-icons img {
-            width: 24px;
-            height: 24px;
-        }
-        .welcome-section {
-            text-align: center;
-            background-color: white; /* Hintergrundfarbe geändert */
-            color: black;
-            padding: 20px 50px;
-            margin: 100 px;
-        }
-        .welcome-section h1 {
-            font-size: 36px;
-            margin: 20px;
-        }
-        .projects-section {
+        header {
+            background-color: #003366;
+            color: white;
             padding: 20px;
-            text-align: left; /* Text linksbündig ausrichten */
+            text-align: center;
         }
-        .projects-section h2 {
-            font-size: 48px; /* Vergrößerte Schriftgröße */
-            text-align: center; /* Zentrierter Text */
-            margin-bottom: 20px;
+        header h1 {
+            margin: 0;
         }
-        .project {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 40px;
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #003366;
+        }
+        a {
+            color: #003366;
             text-decoration: none;
-            color: inherit;
         }
-        .project:nth-child(even) {
-            flex-direction: row-reverse; /* Bei geraden Projekten die Reihenfolge umkehren */
+        a:hover {
+            text-decoration: underline;
         }
-        .project-description {
-            width: 60%;
-            padding-right: 20px; /* Abstand zwischen Text und Bild */
-        }
-        .project-image {
-            width: 35%;
-            text-align: right;
-            padding-left: 20px; /* Abstand zwischen Bild und Text */
-        }
-        .project-image img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-        .divider {
-            border: 0;
-            height: 1px;
-            background: #ccc;
-            margin: 20px 0;
-        }
-        .project:hover {
-            background-color: #f0f0f0;
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #003366;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">Nico Schreiner<br>Software Engineer</div>
-            <div class="contact-icons">
-                <a href="mailto:schreiner_nico@web.com">
-                    <img src="email.png" alt="Email">
-                </a>
-                <a href="https://github.com/SchrN?tab=repositories" target="_blank">
-                    <img src="github.png" alt="GitHub">
-                </a>
-            </div>
-        </header>
-        <section class="welcome-section">
-            <br>
-            <br>
-            <h1>Welcome to my Portfolio!</h1>
-            <p>My name is Nico Schreiner, and I hold a Bachelor's degree in Computer Science from the University of Tübingen.
-            Here, you will find a selection of my programming projects that highlight my skills and interests.
-            Feel free to explore and learn more about my work. If you have any questions or would like to get in touch, please don't hesitate to contact me.
-            </p>
-        </section>
-        <hr class="divider">
-        <section class="projects-section">
-            <h2>Projects</h2>
-            <hr class="divider">
-            <a class="project" href="https://github.com/SchrN/--seizure-type-classification-tuh-v2.0.0" target="_blank">
-                <div class="project-description">
-                    <h3>Bachelor Thesis - Evaluation of machine learning methods for the detection of epileptic seizures (Preprocessing)</h3>
-                    <p>Modification of Jianbin Tangs work to make the framework compatible with the, at the time of the work, 
-newest version of the TUH Seizure Corpus 2.0.0. 
-The purpose of the framework is to preprocess raw EEG data to make it suitable for machine learning purposes. 
-Among other things, a filtering algorithm was implemented to extract important informations out of the EEG data.</p>
-                    
-                </div>
-                <div class="project-image">
-                    <img src="ekg.jpg" alt="SASL-Compiler" width="300" height="200">
-                </div>
-            </a>
-            <hr class="divider">
-            <a class="project" href="https://github.com/SchrN/GGN-for-TUH-Seizure-Corpus-2.0.0" target="_blank">
-                 <div class="project-image">
-                    <img src="best_ggn.png" alt="SASL-Compiler" width="300" height="200">
-                </div>
-                <div class="project-description">
-                    <h3>Bachelor Thesis - Evaluation of machine learning methods for the detection of epileptic seizures</h3>
-                    <p>The framework of Li Zhengdaos et.al was modified to support the preprocessed dataset. Additionally, three new machine learning models were implemented, 
-                        and the hyperparameter optimization framework Optuna was integrated. The models were trained, tested and the achieved results documented.</p>
-                </div>
-            </a>
-            <hr class="divider">
-            <a class="project" href="https://github.com/SchrN/SASL-Compiler" target="_blank">
-                <div class="project-description">
-                    <h3>SASL- Compiler</h3>
-                    <p>As a team project, a compiler for the rudimentary, functional programming language 
-                        SASL(St Andrews Static Language) was implemented. The compiler is written in Python.</p>
-                    
-                </div>
-                <div class="project-image">
-                    <img src="lambda calculus.JPG" alt="SASL-Compiler" width="300" height="200">
-                </div>
-            </a>
-            <hr class="divider">
-            <a class="project" href="https://github.com/SchrN/RoboArena" target="_blank">
-                <div class="project-image">
-                    <img src="roboarena.PNG" alt="SASL-Compiler">
-                </div>
-                <div class="project-description">
-                    <h3>Roboarena (Game with python)</h3>
-                    <p>Roboarena is a local multiplayer game, where players compete against by controlling different
-                    classes of robots in a variety of arenas. The game is built using Python, leveraging the PyQt5 framework to create a robust 
-                    and interactive user interface. Roboarena was a group effort, with team members focusing on different aspects of the game.</p>
-                </div>
-                <hr class="divider">
-            </a>
-            <hr class="divider">
-            <a class="project" href="https://schrn.github.io/" target="_blank">
-                <div class="project-description">
-                    <h3>Portfolio</h3>
-                    <p>This portfolio, named will be continuously improved and expanded. 
-                        It serves as an excellent way to enhance HTML skills through ongoing updates and additions.</p>
-                </div>
-                <div class="project-image">
-                    <img src="portfolio.PNG" alt="SASL-Compiler" width="300" height="200">
-                </div>
-                <hr class="divider">
-            </a>
-        </section>
-    </div>
+    <header>
+        <h1>Portfolio: Softwareentwickler</h1>
+    </header>
+
+    <section>
+        <h2>Über mich</h2>
+        <p>Ich bin ein leidenschaftlicher Softwareentwickler mit Erfahrung in verschiedenen Programmiersprachen und Technologien. Meine Stärken liegen in der Problemlösung und der Entwicklung effizienter, skalierbarer Softwarelösungen.</p>
+    </section>
+
+    <section>
+        <h2>Projekte</h2>
+        <ul>
+            <li><strong>Projekt 1:</strong> Beschreibung deines ersten Projekts.</li>
+            <li><strong>Projekt 2:</strong> Beschreibung deines zweiten Projekts.</li>
+            <li><strong>Projekt 3:</strong> Beschreibung deines dritten Projekts.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Kontakt</h2>
+        <p>Besuche mein <a href="https://github.com/deinbenutzername" target="_blank">GitHub-Profil</a>, um mehr über meine Arbeit zu erfahren oder mich zu kontaktieren.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dein Name</p>
+    </footer>
 </body>
 </html>
 
-
-
-            <!-- https://github.com/SchrN/GGN-for-TUH-Seizure-Corpus-2.0.0 -->
-            <!-- https://github.com/SchrN/SASL-Compiler -->
-            <!-- https://github.com/SchrN/RoboArena -->
             <!-- https://github.com/SchrN/--seizure-type-classification-tuh-v2.0.0 -->
 
 
