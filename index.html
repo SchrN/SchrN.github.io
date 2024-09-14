@@ -15,13 +15,20 @@
     .blue-section1 {
       background-color: blue;
       height: 200px;
-      padding-top: 20px;
-      padding-right: 50px;
-      padding-left: 50px;
+      padding: 20px;
       color: white; /* Textfarbe für besseren Kontrast */
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      align-items: center; /* Vertikale Zentrierung */
+      justify-content: space-between; /* Abstand zwischen Text und Bild */
+    }
+
+    .blue-section1 .text {
+      max-width: 50%; /* Sicherstellen, dass der Textbereich nicht zu breit wird */
+    }
+
+    .blue-section1 img {
+      max-width: 40%; /* Das Bild nimmt maximal 40% der Breite ein */
+      height: auto; /* Höhe des Bildes automatisch anpassen */
     }
   
     .blue-section2 {
@@ -71,10 +78,13 @@
 </head>
 <body>
   <section class="blue-section1">
-    <h1>Welcome to my Portfolio!</h1>
-    <p>My name is Nico Schreiner, and I hold a Bachelor's degree in Computer Science from the University of Tübingen.
-    Here, you will find a selection of my programming projects that highlight my skills and interests.
-    Feel free to explore and learn more about my work. If you have any questions or would like to get in touch, please don't hesitate to contact me.</p>
+    <div class="text">
+      <h1>Welcome to my Portfolio!</h1>
+      <p>My name is Nico Schreiner, and I hold a Bachelor's degree in Computer Science from the University of Tübingen.
+      Here, you will find a selection of my programming projects that highlight my skills and interests.
+      Feel free to explore and learn more about my work. If you have any questions or would like to get in touch, please don't hesitate to contact me.</p>
+    </div>
+    <img src="path/to/your/image.jpg" alt="Portfolio Image">
   </section>
   <section class="blue-section2">
     <div class="white-section">
@@ -88,6 +98,7 @@
   </section>
 </body>
 </html>
+
 
 
 
