@@ -9,75 +9,88 @@
     * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box; /* Um sicherzustellen, dass Padding und Border in der Breite und Höhe enthalten sind */
+      box-sizing: border-box;
     }
 
     .blue-section1 {
-      background-color: blue;
-      height: 400px;
-      padding-left: 300px;
-      padding-right: 300px;
-      padding-top: 100px ;
-      padding-bottom: 100px ;
-      color: white; /* Textfarbe für besseren Kontrast */
+      background-color: #36454F;
+      height: 730px;
+      padding-left: 150px;
+      padding-right: 150px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      font-family: Verdana, sans-serif;
+      color: white;
       display: flex;
-      align-items: center; /* Vertikale Zentrierung */
-      justify-content: space-between; /* Abstand zwischen Text und Bild */
+      align-items: center;
+      justify-content: space-between;
     }
 
     .blue-section1 .text {
-      max-width: 50%; /* Sicherstellen, dass der Textbereich nicht zu breit wird */
+      max-width: 60%;
     }
 
     .blue-section1 img {
-      max-width: 40%; /* Das Bild nimmt maximal 40% der Breite ein */
-      height: auto; /* Höhe des Bildes automatisch anpassen */
+      max-width: 35%;
+      height: auto;
     }
-  
+
     .blue-section2 {
-      background-color: blue;
-      padding: 20px;
-      padding-right: 0px;
-      padding-left: 0px;
-      color: white; /* Textfarbe für besseren Kontrast */
+      background-color: #36454F;
+      padding: 0px;
+      color: white;
     }
 
     .blue-section3 {
-      background-color: blue;
-      height: 400px;
-      padding-right: 0px;
-      padding-left: 0px;
+      background-color: #36454F;
+      height: 150px;
+      padding-right: 150px;
+      padding-left: 150px;
       color: white;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      flex-direction: column;
+      font-family: Verdana, sans-serif;
     }
 
     .white-section {
       background-color: white;
-      color: black; /* Textfarbe für besseren Kontrast */
+      width: 100%;
+      color: black;
       padding: 50px;
-      border-radius: 40%;
+      padding-left: 58px;
+      padding-right: 150px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      border-radius: 10%;
+      font-family: Verdana, sans-serif;
       text-align: center;
+      border: 2px solid black;
     }
+
+    .white-section h1 {
+      font-size: 50px;
+      margin-left: 87px; /* Wert anpassen, um die Überschrift weiter nach rechts zu verschieben */
+    }
+
 
     /* Projects Section */
     .projects {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 50px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 80px;
       padding: 50px;
     }
 
     .project-card {
       background-color: #f5f5f5;
-      width: 30%;
       border-radius: 10px;
+      height: 500px;
+      width: 400px;
       padding: 20px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
+      border: 2px solid black;
     }
 
     .project-card:hover {
@@ -102,8 +115,10 @@
 
     .project-card .icons {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
+      gap: 10px;
       margin-top: 10px;
+      margin-left: 10px;
     }
 
     .project-card .icons a {
@@ -117,29 +132,28 @@
 <body>
   <section class="blue-section1">
     <div class="text">
-      <h1>Welcome to my Portfolio!</h1>
-      <p style="font-size: 30px;">My name is Nico Schreiner, and I hold a Bachelor's degree in Computer Science from the University of Tübingen.
+      <h1 style="font-size: 70px;">Welcome to my Portfolio!</h1>
+      <p style="font-size: 20px;">My name is Nico Schreiner, and I hold a Bachelor's degree in Computer Science from the University of Tübingen.
       Here, you will find a selection of my programming projects that highlight my skills and interests.
       Feel free to explore and learn more about my work. If you have any questions or would like to get in touch, please don't hesitate to contact me.</p>
     </div>
-    <img src="github.png" alt="Portfolio Image"  width="300" height="200">
+    <img src="office.png" alt="Portfolio Image" width="500" height="300">
   </section>
 
   <section class="blue-section2">
     <div class="white-section">
-      <h1>Projects</h1>
-      <!-- Projects moved here -->
+      <h1 style="font-size: 50px;">Projects</h1>
       <section class="projects">
         <div class="project-card">
-          <img src="roboarena.PNG" alt="Project 1" width="300" height="200">
-          <h3>RoboArena </h3>
-          <p style="font-size: 20px;">RoboArena is a local multiplayer game, where players compete against by controlling different
-                    classes of robots in a variety of arenas. The game is built using Python, leveraging the PyQt5 framework to create a robust 
-                    and interactive user interface. Roboarena was a group effort, with team members focusing on different aspects of the game.</p>
+          <img src="roboarena.svg" alt="Project 1" width="300" height="200">
+          <h3>RoboArena</h3>
+          <p style="font-size: 15px;">RoboArena is a local multiplayer game, where players compete by controlling different
+              classes of robots in a variety of arenas. The game is built using Python, leveraging the PyQt5 framework to create a robust 
+              and interactive user interface. Roboarena was a group effort, with team members focusing on different aspects of the game.</p>
           <div class="icons">
-            <a href="https://github.com/SchrN?tab=repositories" target="_blank">
-                    <img src="github.png" alt="GitHub" width="30" height="30">
-                </a>
+            <a href="https://github.com/SchrN/RoboArena" target="_blank">
+              <img src="github.png" alt="GitHub" width="30" height="30">
+            </a>
             <a href="#"><i class="fas fa-code"></i></a>
           </div>
         </div>
@@ -147,36 +161,61 @@
         <div class="project-card">
           <img src="lambda calculus.JPG" alt="Project 2" width="300" height="200">
           <h3>SASL-Compiler</h3>
-          <p style="font-size: 20px;">A compiler for the rudimentary functional programming language SASL (St Andrews Static Language), built with Python.</p>
+          <p style="font-size: 15px;">A compiler for the rudimentary functional programming language SASL (St Andrews Static Language), built with Python.</p>
           <div class="icons">
-            <a href="https://github.com/SchrN?tab=repositories" target="_blank">
-                    <img src="github.png" alt="GitHub"  width="30" height="30">
-                </a>
+            <a href="https://github.com/SchrN/SASL-Compiler" target="_blank">
+              <img src="github.png" alt="GitHub" width="30" height="30">
+            </a>
             <a href="#"><i class="fas fa-code"></i></a>
           </div>
         </div>
 
         <div class="project-card">
-          <img src="ekg.jpg" alt="Project 3"  width="300" height="200">
-          <h3>Project 3</h3>
-          <p style="font-size: 20px;">In my bachelor's thesis, I modified an existing framework to ensure compatibility with the dataset used for epilepsy research. The framework was adapted to preprocess the data efficiently by cleaning and adjusting raw data. After optimizing the preprocessing stage, I tested various machine learning models to evaluate their performance and developed additional models. A key focus was on hyperparameter optimization to maximize prediction accuracy and tailor the models to the specific use case.
-          </p>
+          <img src="testa.png" alt="Project 3" width="300" height="200">
+          <h3>Evaluation of machine learning models</h3>
+          <p style="font-size: 15px;">In my bachelor's thesis, I modified an existing framework to ensure compatibility with the dataset used for epilepsy research. After optimizing the preprocessing stage, I tested various machine learning models to evaluate their performance and developed additional models. A key focus was on hyperparameter optimization to maximize Performance</p>
           <div class="icons">
-            <a href="https://github.com/SchrN?tab=repositories" target="_blank">
-                    <img src="github.png" alt="GitHub"  width="30" height="30">
-                </a>
+            <a href="https://github.com/SchrN/--seizure-type-classification-tuh-v2.0.0" target="_blank">
+              <img src="github.png" alt="GitHub" width="30" height="30">
+            </a>
+            </a>
+              <!-- Zweites GitHub-Icon mit einem anderen Link -->
+              <a href="https://github.com/SchrN/GGN-for-TUH-Seizure-Corpus-2.0.0" target="_blank">
+                <img src="github.png" alt="GitHub" width="30" height="30">
             <a href="#"><i class="fas fa-code"></i></a>
           </div>
         </div>
+
+        <div class="project-card">
+          <img src="portfolio.svg" alt="Project 4" width="300" height="200">
+          <h3>Portfolio</h3>
+          <p style="font-size: 15px;">This portfolio is an ongoing project that I continuously expand and improve. It serves as a showcase of my skills and also as a great opportunity to enhance my HTML, CSS, and web development skills.</p>
+          <div class="icons">
+            <a href="https://schrn.github.io/" target="_blank">
+              <img src="github.png" alt="GitHub" width="30" height="30">
+            </a>
+            <a href="#"><i class="fas fa-code"></i></a>
+          </div>
+        </div>
+
       </section>
     </div>
   </section>
 
-  <section class="blue-section3">
-    <p>Nico Schreiner</p>
+  <section class="blue-section3" style="display: flex; justify-content: space-between; align-items: center;">
+    <p style="font-size: 15px;">&copy; 2024 Nico Schreiner </p>
+    <div class="icons" style="display: flex; gap: 15px;">
+      <a href="https://github.com/SchrN?tab=repositories" target="_blank">
+        <img src="github.png" alt="Email" width="30" height="30">
+      </a>
+      <a href="mailto:schreiner_nico@web.de" target="_blank">
+        <img src="email.png" alt="GitHub" width="30" height="30">
+      </a>
+    </div>
   </section>
 </body>
 </html>
+
 
 
 
